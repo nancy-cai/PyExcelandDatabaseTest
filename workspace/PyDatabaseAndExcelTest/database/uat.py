@@ -5,9 +5,7 @@ import xlwt
 
 
 connection = pyodbc.connect('Driver={SQL Server};'
-                                'Server=openagentdev1f.cakxzpu8yxgf.ap-southeast-2.rds.amazonaws.com;'
-                                'Database=openagent-dev;'
-                                'uid=oaadmin;pwd=DeCRebu2')
+                                )
 cursor = connection.cursor()
 cursor.execute("select * from tbl_PropertyAddress where vcStreet='Scotsman St'")
 
